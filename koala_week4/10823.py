@@ -1,4 +1,7 @@
-import sys
-input = sys.stdin.read
-
-print(sum(map(int,input().replace('\n','').split(','))))
+s=""
+while True :
+    try:
+        s+=input()
+    except EOFError:
+        break
+print(sum(map(int,s.split(','))))
