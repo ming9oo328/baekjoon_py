@@ -17,6 +17,7 @@ for i in range(N):
         for i in range(len(word)-1):
             if word[i] != word[i+1]:
                count+=1 
+        #그룹단어이려면 알파벳 변환 횟수가 알파벳수-1이어야 한다.
         if count == len(check)-1:
             gWord +=1
             
